@@ -11,7 +11,6 @@ function populateSelect() {
     if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
       // PARSE JSON DATA.
       var theList = JSON.parse(xhr.responseText);
-      console.log(theList);
 
       var ele = document.getElementById("sel");
       for (var i = 0; i < theList.grocery_items.length; i++) {
